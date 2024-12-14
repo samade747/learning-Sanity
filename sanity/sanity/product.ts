@@ -1,34 +1,47 @@
 export const product = {
-    name: 'product',
-    title: 'Product',
-    type: 'document',
+    name: 'product', // name of the document type
+    title: 'Product', // title of the document type
+    type: 'document', //    type of the document
     fields: [
         {
-            name: 'title',
-            title: 'Title',
-            type: 'string',
+            name: 'title', // name of the field
+            title: 'Title', // title of the field
+            type: 'string', // type of the field
         },
         {
-            name: 'slug',
-            title: 'Slug',
-            type: 'slug',
-            options: { 
-                source: 'title',
-                maxLength: 96,
-            },
-        },
-        {   
-            name: 'image',
-            title: 'Image',
-            type: 'image',
-            options: {
-                hotspot: true,
-            },
+            name: 'description',
+            title: 'Product Description',
+            type: 'string',
+            
         },
         {
             name: 'price',
-            title: 'Price',
+            title: 'Product Price',
             type: 'number',
+        },
+        {   
+            name: 'image',
+            title: 'Product Image',
+            type: 'array',
+            of: [{ 
+                name: 'img',
+                title: 'Image',
+                type: 'image',
+                
+             }],
+        },
+        {
+            name: 'category',
+            title: 'Product Category',
+            type: 'reference',
+            to: [
+                {
+                type: 'category'
+                }
+            ]
+        
+        
+        
         }
-    ],
+    ]
 }
