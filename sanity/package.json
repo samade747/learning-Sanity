@@ -11,6 +11,8 @@
   "dependencies": {
     "@sanity/image-url": "^1.1.0",
     "@sanity/vision": "^3.65.1",
+    "@vercel/postgres": "^0.10.0",
+    "drizzle-orm": "^0.38.2",
     "next": "15.0.3",
     "next-sanity": "^9.8.20",
     "react": "19.0.0-rc-66855b96-20241106",

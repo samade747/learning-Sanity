@@ -1,6 +1,6 @@
 import createImageUrlBuilder from '@sanity/image-url'
 import type { Image } from 'sanity'
-import { client } from "../lib/client"
+import { client } from "./client"
 
 
 

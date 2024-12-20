@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { client } from "../sanity/lib/client";
-import { urlForImage } from "@/sanity/lib/image";
+import { client } from "../sanityz/lib/client";
+import { urlForImage } from "@/sanityz/lib/image";
 
 export const getProductData = async () => {
   const data = await client.fetch(`*[_type == "product"]{
